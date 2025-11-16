@@ -70,13 +70,20 @@ export default function Contact() {
               <span>+91 7806803776</span>
             </div>
 
-            <div className="flex items-center gap-3">
+            <a
+              href="https://www.google.com/maps/search/Chennai,+India"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 hover:text-white transition"
+            >
               <MapPin size={20} className="text-blue-300" />
               <span>Chennai, India</span>
-            </div>
+            </a>
 
             <a
-              href="mailto:srikaviya30@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&to=srikaviya30@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-3 hover:text-white transition"
             >
               <Mail size={20} className="text-blue-300" />
