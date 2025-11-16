@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* page background and global text color */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply text-white;
+  background: linear-gradient(180deg,#010417 0%, #041937 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* small utilities */
+a { text-decoration: none; }
