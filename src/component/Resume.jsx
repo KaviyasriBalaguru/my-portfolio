@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 export default function Resume() {
+  const resumeLink = `${import.meta.env.BASE_URL}resume.pdf`;
+
   return (
     <section
       id="resume"
@@ -28,7 +30,7 @@ export default function Resume() {
       </motion.p>
 
       <motion.a
-        href="./resume.pdf"
+        href={resumeLink}
         download="Kaviyasri_Resume.pdf"
         className="border border-blue-400 text-blue-300 px-6 py-3 rounded-full shadow-lg inline-flex items-center gap-3"
         initial={{ scale: 0.95, opacity: 0 }}

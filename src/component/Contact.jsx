@@ -53,19 +53,19 @@ export default function Contact() {
         the links to reach me directly — I typically reply within a few days.
       </motion.p>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
         {/* LEFT SIDE */}
         <motion.div
-          className="text-gray-300 space-y-5"
+          className="text-gray-300 space-y-5 text-center lg:text-left"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
           <h3 className="text-2xl font-semibold text-blue-300">Get in touch</h3>
 
-          <div className="flex flex-col gap-3 text-gray-300">
-            <div className="flex items-center gap-3">
+          <div className="flex flex-col gap-3 sm:gap-4 text-gray-300">
+            <div className="flex items-center gap-3 justify-center lg:justify-start">
               <Phone size={20} className="text-blue-300" />
               <span>+91 7806803776</span>
             </div>
@@ -74,7 +74,7 @@ export default function Contact() {
               href="https://www.google.com/maps/search/Chennai,+India"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 hover:text-white transition"
+              className="flex items-center gap-3 hover:text-white transition justify-center lg:justify-start"
             >
               <MapPin size={20} className="text-blue-300" />
               <span>Chennai, India</span>
@@ -84,7 +84,7 @@ export default function Contact() {
               href="https://mail.google.com/mail/?view=cm&to=srikaviya30@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 hover:text-white transition"
+              className="flex items-center gap-3 hover:text-white transition justify-center lg:justify-start"
             >
               <Mail size={20} className="text-blue-300" />
               <span>srikaviya30@gmail.com</span>
@@ -94,7 +94,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/kaviyasri-balaguru"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 hover:text-white transition"
+              className="flex items-center gap-3 hover:text-white transition justify-center lg:justify-start"
             >
               <Linkedin size={20} className="text-blue-300" />
               <span>LinkedIn</span>
@@ -104,7 +104,7 @@ export default function Contact() {
               href="https://github.com/KaviyasriBalaguru"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 hover:text-white transition"
+              className="flex items-center gap-3 hover:text-white transition justify-center lg:justify-start"
             >
               <Github size={20} className="text-blue-300" />
               <span>GitHub</span>
@@ -122,7 +122,7 @@ export default function Contact() {
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
 
             {/* Row 1: Name + Email */}
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4 lg:flex-row">
               <input
                 name="name"
                 type="text"
