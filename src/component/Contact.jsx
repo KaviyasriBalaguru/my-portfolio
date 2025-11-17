@@ -57,7 +57,7 @@ export default function Contact() {
 
         {/* LEFT SIDE */}
         <motion.div
-          className="text-gray-300 space-y-5 text-center lg:text-left"
+          className="text-gray-300 space-y-5 text-center lg:text-left bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -114,7 +114,7 @@ export default function Contact() {
 
         {/* RIGHT SIDE: FORM */}
         <motion.div
-          className="bg-transparent"
+          className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
