@@ -25,7 +25,7 @@ export default function Projects() {
       className="min-h-screen bg-transparent py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8"
     >
       <motion.h2
-        className="text-3xl sm:text-4xl font-bold text-center text-blue-400 mb-4 sm:mb-6"
+        className="text-3xl sm:text-4xl font-bold text-center text-blue-400 mb-10"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -33,22 +33,11 @@ export default function Projects() {
         My Projects
       </motion.h2>
 
-      <motion.p
-        className="text-center text-gray-300 max-w-3xl mx-auto mb-12 text-sm sm:text-base leading-relaxed"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        A snapshot of the work I am most proud of — spanning AI-powered solutions,
-        thoughtful product design, and embedded innovations. Each build keeps the
-        experience consistent across desktop and mobile.
-      </motion.p>
-
-      <div className="max-w-6xl mx-auto grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 items-stretch">
+      <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 justify-items-center">
         {projects.map((p, i) => (
           <motion.div
             key={i}
-            className="group relative flex flex-col h-full rounded-3xl border border-white/10 bg-gradient-to-br from-white/90 to-blue-50/80 p-6 shadow-xl shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+            className="group relative flex h-full w-full max-w-xl flex-col rounded-3xl border border-white/10 bg-gradient-to-br from-white/90 to-blue-50/80 p-6 shadow-xl shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}

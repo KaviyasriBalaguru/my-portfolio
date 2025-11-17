@@ -53,11 +53,11 @@ export default function Contact() {
         the links to reach me directly — I typically reply within a few days.
       </motion.p>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2 items-stretch px-2 sm:px-6">
 
         {/* LEFT SIDE */}
         <motion.div
-          className="text-gray-300 space-y-5 text-center lg:text-left bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
+          className="w-full text-gray-300 space-y-5 text-center lg:text-left bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -114,7 +114,7 @@ export default function Contact() {
 
         {/* RIGHT SIDE: FORM */}
         <motion.div
-          className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
+          className="w-full bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -128,7 +128,7 @@ export default function Contact() {
                 type="text"
                 placeholder="Your name"
                 required
-                className="flex-1 rounded-lg px-4 py-3 bg-white/5 border border-blue-400/60 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 outline-none"
+                className="w-full flex-1 rounded-lg px-4 py-3 bg-white/5 border border-blue-400/60 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 outline-none"
               />
 
               <input
@@ -136,7 +136,7 @@ export default function Contact() {
                 type="email"
                 placeholder="Your email"
                 required
-                className="flex-1 rounded-lg px-4 py-3 bg-white/5 border border-blue-400/60 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 outline-none"
+                className="w-full flex-1 rounded-lg px-4 py-3 bg-white/5 border border-blue-400/60 placeholder-gray-400 focus:ring-2 focus:ring-blue-400 outline-none"
               />
             </div>
 
